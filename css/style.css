@@ -1,0 +1,45 @@
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #294614;
+  color: #6DC0A4;
+  font-size: 25px;
+}
+
+.copyright-text {
+  color: #6DC0A4;
+  font-size: 15px;
+}
+
+.copyright-text a {
+  text-decoration: none;
+  color: red;
+}
+
+.section-subheading {
+  font-style: italic;
+  font-size: 28px;
+  color: white;
+  font-size: 2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 3px 3px 10px black;
+}
+
+.form-input {
+  text-align: center;
+  padding: 40px;
+}
+
+label {
+  color: #404040;
+  font-size: 1.2rem;
+  text-align: left;
+  text-shadow: 1px 1px 5px #404040;
+  width: 20rem;
+}
+
+body {
+  overflow-x: hidden;
+}

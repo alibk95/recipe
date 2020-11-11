@@ -14,11 +14,34 @@
     <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
 
     <!-- CSS Stylesheets -->
-    
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Cook With Us</title>
   </head>
   <body>
+    <!-- Header -->
+    <div class="header">
+      <h1 class='section-heading'>Cook With Us!</h1>
+      <h2 class='section-subheading'>R e c i p e &nbsp&nbsp S e a r c h &nbsp&nbsp b y &nbsp&nbsp I n g r e d i e n t s</h2>
+      <p><code class="copyright-text">Powered by <a href="http://www.recipepuppy.com/about/api/" target= "_blank">🍜 Recipe Puppy</a></code></p>
+    </div>
+
+    <!-- Form For Inputs -->
+    <div class="form-input">
+      <form id="query-form">
+        <div>
+          <label for="ingredients">Ingredients (comma separated):</label>
+          <input class="textfield" id="ingredients" type="text" name="ingredients" placeholder="e.g. beef, potato (optional)" onChange="sanitizeInputs()"><br><br>
+        </div>
+        <div>
+          <label for="contains">Dish Name Contains (no commas):</label>
+          <input class="textfield" id="contains" type="text" name="contains" placeholder="e.g. spaghetti (optional)" onChange="sanitizeInputs()"><br><br>
+        </div>
+        <input class="button" type="button" value="Reset" id="resetButton" onClick="this.form.reset();resetResults()" />
+        <input class="button" type="submit" value="Search ..." id="searchButton" />
+      </form>
+    </div>
+
 
   </body>
 </html>

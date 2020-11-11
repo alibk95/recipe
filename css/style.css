@@ -6,6 +6,13 @@
   font-size: 25px;
 }
 
+.footer {
+  text-align: center;
+  background: white;
+  color: #6DC0A4;
+  font-size: 25px;
+}
+
 .copyright-text {
   color: #6DC0A4;
   font-size: 15px;
@@ -38,6 +45,11 @@ label {
   text-align: left;
   text-shadow: 1px 1px 5px #404040;
   width: 20rem;
+
+}
+
+#holder-ingredients {
+  padding-right: 2.1rem;
 }
 
 body {
@@ -46,12 +58,25 @@ body {
 
 input {
   width: 30%;
+  padding: 10px;
 }
 
 .textfield {
   margin: auto;
   width: 30%;
+  font-size: 17px;
 }
+
+.holder {
+  padding-left: 2rem;
+}
+
+hr.rounded {
+  border-top: 8px solid #294614;
+  border-radius: 5px;
+}
+
+
 
 .button {
   display: inline-block;

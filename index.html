@@ -30,18 +30,27 @@
     <div class="form-input">
       <form id="query-form">
         <div>
-          <label for="ingredients">Ingredients (comma separated):</label>
-          <input class="textfield" id="ingredients" type="text" name="ingredients" placeholder="e.g. beef, potato (optional)" onChange="sanitizeInputs()"><br><br>
+            <label id="holder-ingredients" for="ingredients">Ingredients (comma separated):</label>
+            <input class="textfield" id="ingredients" type="text" name="ingredients" placeholder="e.g. beef, potato (optional)" onChange="sanitizeInputs()"><br><br>
         </div>
         <div>
-          <label for="contains">Dish Name Contains (no commas):</label>
+          <label id="holder-contains" for="contains">Dish Name Contains (no commas):</label>
           <input class="textfield" id="contains" type="text" name="contains" placeholder="e.g. spaghetti (optional)" onChange="sanitizeInputs()"><br><br>
         </div>
-        <input class="button" type="button" value="Reset" id="resetButton" onClick="this.form.reset();resetResults()" />
-        <input class="button" type="submit" value="Search ..." id="searchButton" />
+        <button class="button" id="resetButton" style="vertical-align:middle" onClick="this.form.reset();resetResults()"><span>Reset </span></button>
+        <button class="button" id="searchButton" style="vertical-align:middle"><span>Search </span></button>
       </form>
     </div>
 
-
+    <!-- Search Results -->
+    <div class="section-subheading" id="search-results-heading"></div>
+    <div class="results-div" id="results"></div>
   </body>
+  <footer>
+    <hr class="rounded">
+    <div class="footer">
+      <p><code class="copyright-text">Search powered by <a href="http://www.recipepuppy.com/about/api/" target= "_blank">🐶 Recipe Puppy</a></code></p>
+      <code class="copyright-text">Crafted with ❤️ by <a href="https://alibk95.github.io/" target= "_blank">Alibk95</a></code>
+    </div>
+  </footer>
 </html>

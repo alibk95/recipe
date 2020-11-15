@@ -83,12 +83,30 @@ hr.rounded {
 .dish-image {
     border-radius: 10px;
     box-shadow: 3px 3px 10px black;
-    width: 1%;
-    height: 1%;
+
 }
 
 .dish-image-div {
   margin-bottom: 1.2rem;
+}
+
+.dish-title-div a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dish-title-div a:hover {
+  text-decoration: underline;
+}
+
+.dish-ingredients-div {
+  margin-bottom: 3rem;
+}
+
+#search-results-heading {
+  color: black;
+  text-decoration: underline;
 }
 
 .button {

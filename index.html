@@ -16,6 +16,7 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
 
+
     <title>Cook With Us</title>
   </head>
   <body>
@@ -31,11 +32,11 @@
       <form id="query-form">
         <div>
             <label id="holder-ingredients" for="ingredients">Ingredients (comma separated):</label>
-            <input class="textfield" id="ingredients" type="text" name="ingredients" placeholder="e.g. beef, potato (optional)" onChange="sanitizeInputs()"><br><br>
+            <input class="textfield" id="ingredients" type="text" name="ingredients" placeholder="e.g. beef, potato (optional)"><br><br>
         </div>
         <div>
           <label id="holder-contains" for="contains">Dish Name Contains (no commas):</label>
-          <input class="textfield" id="contains" type="text" name="contains" placeholder="e.g. spaghetti (optional)" onChange="sanitizeInputs()"><br><br>
+          <input class="textfield" id="contains" type="text" name="contains" placeholder="e.g. spaghetti (optional)"><br><br>
         </div>
         <button class="button" id="resetButton" style="vertical-align:middle" onClick="this.form.reset();resetResults()"><span>Reset </span></button>
         <button class="button" id="searchButton" style="vertical-align:middle"><span>Search </span></button>
@@ -54,4 +55,8 @@
       <code class="copyright-text">Crafted with ❤️ by <a href="https://alibk95.github.io/" target= "_blank">Alibk95</a></code>
     </div>
   </footer>
+  <!-- JQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
 </html>

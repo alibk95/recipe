@@ -1,6 +1,7 @@
 // JavaScript file for the web page "CookWithUs"
 // Created by ALIBK95
 // Copyright (C) Alibk95 2020
+// main branch
 
 $(document).ready(function() {
   // add an event listener (performSearch) to the form
